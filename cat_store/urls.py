@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.authtoken import views
+from django.views.generic import RedirectView
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('cats.urls')),
+    url(r'^$', RedirectView.as_view(url='/api/v1/cats/')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api-token-auth/', views.obtain_auth_token),
 

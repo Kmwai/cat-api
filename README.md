@@ -43,4 +43,4 @@ This is challenge 34 on the [pybites challenges](https://pybit.es/)
 | cats/:id       | PUT             | UPDATE       | Update a single cat  |
 | cats/:id       | DELETE          | DELETE       | Delete a single cat  |
 
-Deployed on Heroku. ['django-cat-api'](https://django-cat-api.herokuapp.com)
+Deployed on Heroku. [django-cat-api](https://django-cat-api.herokuapp.com)

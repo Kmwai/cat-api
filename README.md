@@ -7,31 +7,31 @@ This is challenge 34 on the ['pybites challenges'](https://pybit.es/)
 
 * Clone repo
 
-... ```git clone <URL>```
+   *  ```git clone <URL>```
 
 * Create virtual environment
 
-... ```virtualenv -p python3 envname```
+   * ```virtualenv -p python3 envname```
 
 * Activate venv environment
 
-... ```source env/bin/activate```
+   * ```source env/bin/activate```
 
 * Install the requirements
 
-... ```pip install requirements.txt```
+   *  ```pip install requirements.txt```
 
 * Migrate to set up database tables for use
 
-... ```./manage.py migrate``` 
+   * ```./manage.py migrate``` 
 
 * Create admin user
 
-... ```./manage.py createsuperuser``` 
+   * ```./manage.py createsuperuser``` 
 
 * Run
 
-... ```./manage.py runserver```
+   * ```./manage.py runserver```
 
 ## RESTful structure
 

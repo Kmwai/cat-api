@@ -1,7 +1,7 @@
 # cat-api
 Simple api written in Django
 
-This is challenge 34 on the ['pybites challenges'](https://pybit.es/)
+This is challenge 34 on the [pybites challenges](https://pybit.es/)
 
 ## installation
 

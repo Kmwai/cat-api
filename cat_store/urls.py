@@ -13,16 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
 from rest_framework.authtoken import views
+from rest_framework.documentation import include_docs_urls
 from django.views.generic import RedirectView
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('cats.urls')),
-    url(r'^$', RedirectView.as_view(url='/api/v1/cats/')),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^api-token-auth/', views.obtain_auth_token),
+    path('admin/', admin.site.urls),
+    path('', include('cats.urls')),
+    path('', RedirectView.as_view(url='/api/v1/cats/')),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api-token-auth/', views.obtain_auth_token),
+    path('docs/', include_docs_urls(title='Cat-API', public=False))
 
 ]

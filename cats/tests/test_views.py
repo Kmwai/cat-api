@@ -132,4 +132,4 @@ class DeleteSingleCatTest(TestCase):
 
     def test_invalid_delete_cat(self):
         response = client.delete(reverse('get_delete_update_cat', kwargs={'pk': 30}))
-        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND) 
